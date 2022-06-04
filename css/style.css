@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+.card-container{
+  width: 800px;
+  height: 400px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header{
+  font-family:'Big Shoulders Display', cursive;
+  font-weight: bolder;
+  font-size: x-large;
+  color: white;
+}
+
+p{
+  font-family: 'Lexend Deca', sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.card{
+  padding: 40px;
+}
+
+.sedans{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 0 0 8px;
+}
+
+.suv{
+  background-color:hsl(184, 100%, 22%);
+}
+
+.luxury{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 8px 8px 0;
+}
+
+/* Buttons styling */
+
+.button{
+  width: 110px;
+  height: 40px;
+  margin-top: 60px;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn-sedans{
+  color: hsl(31, 77%, 52%);
+  font-weight: bold;
+}
+
+.btn-suv{
+  color: hsl(184, 100%, 22%);
+  font-weight: bold;
+}
+
+.btn-luxury{
+  color:hsl(179, 100%, 13%);
+  font-weight: bold;
+}
+
+/* Active State of buttons */
+
+.btn-sedans:hover{
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border: solid white;
+}
+
+.btn-suv:hover{
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  border: solid white;
+}
+
+.btn-luxury:hover{
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+  border: solid white;
+}
+
+/* Responsiveness when viewd on Mobile devices */
+
+@media (max-width: 375px){
+  
+  .card-container{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  
+  .sedans{
+    border-radius: 8px 8px 0 0;
+  }
+
+  .luxury{
+    border-radius: 0 0 8px 8px;
+  }
+
+  .card{
+    width: 30%;
+    /* margin-right: 20px; */
+  }
+
+}
